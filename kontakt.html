@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BARTMAL — Kontakt</title>
+  <meta name="description" content="BARTMAL — kontakt. Telefon: 666 291 280. Facebook: BartmalRemonty." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/" aria-label="BARTMAL">
+        <div class="brand-text">
+          <strong>BARTMAL</strong>
+          <span>Usługi remontowo-budowlane</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Nawigacja">
+        <a href="/">Start</a>
+        <a href="/uslugi">Usługi</a>
+        <a href="/galeria">Galeria</a>
+        <a href="/o-nas">O nas</a>
+        <a class="active" href="/kontakt">Kontakt</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn primary" href="tel:+48666291280">Zadzwoń</a>
+        <button class="btn icon burger" id="open" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Menu mobilne">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
+      <div class="brand-text">
+        <strong>BARTMAL</strong>
+        <span>Menu</span>
+      </div>
+      <button class="btn" id="close" aria-label="Zamknij">✕</button>
+    </div>
+
+    <a href="/">Start</a>
+    <a href="/uslugi">Usługi</a>
+    <a href="/galeria">Galeria</a>
+    <a href="/o-nas">O nas</a>
+    <a href="/kontakt">Kontakt</a>
+    <a class="btn primary" href="tel:+48666291280" style="justify-content:center;">Zadzwoń</a>
+    <a href="https://www.facebook.com/BartmalRemonty" target="_blank" rel="noopener">Facebook</a>
+  </aside>
+
+  <main>
+    <div class="container">
+      <section class="panel glow hero" style="padding:22px;">
+        <div class="hero-top">
+          <div>
+            <div class="kicker"><span class="kdot"></span> Kontakt</div>
+            <h1 style="margin-top:14px;">Zadzwoń</h1>
+            <p class="lead">Najprościej i najszybciej: telefon. Realizacje: galeria i Facebook.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="/galeria">Galeria</a>
+            <a class="btn" href="/uslugi">Usługi</a>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px;">
+          <div class="card">
+            <h3>Telefon</h3>
+            <p><a href="tel:+48666291280" style="font-weight:900; color: rgba(255,255,255,.88);">666 291 280</a></p>
+          </div>
+          <div class="card">
+            <h3>Facebook</h3>
+            <p><a href="https://www.facebook.com/BartmalRemonty" target="_blank" rel="noopener" style="font-weight:900; color: rgba(255,255,255,.88);">BartmalRemonty</a></p>
+          </div>
+          <div class="card">
+            <h3>Galeria</h3>
+            <p><a href="/galeria" style="font-weight:900; color: rgba(255,255,255,.88);">Zobacz realizacje</a></p>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <strong>Masz pytanie?</strong>
+            <span>Najlepiej zadzwonić — szybko ustalimy szczegóły.</span>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="tel:+48666291280">Zadzwoń teraz</a>
+            <a class="btn" href="https://www.facebook.com/BartmalRemonty" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-inner">
+          <div>
+            © <span id="year"></span> BARTMAL
+            <div style="margin-top:8px;">
+              <a href="tel:+48666291280" style="color:rgba(255,255,255,.82);">666 291 280</a>
+              <span style="opacity:.35;"> • </span>
+              <a href="https://www.facebook.com/BartmalRemonty" target="_blank" rel="noopener" style="color:rgba(255,255,255,.82);">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
